@@ -1,10 +1,6 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
+  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
   "profile": { "name": "typicode" },
   "investments": [
     {
@@ -14,6 +10,7 @@
         {
           "id": 1,
           "name": "Investment in CDR",
+          "symbol": "CDR",
           "value": 1000,
           "date": "2021-10-10",
           "note": "Good investment to make!"
@@ -21,6 +18,7 @@
         {
           "id": 2,
           "name": "Investment in PKO",
+          "symbol": "PKO",
           "value": 2000,
           "date": "2021-10-10",
           "note": "Very good investment to make!"
@@ -28,6 +26,7 @@
         {
           "id": 3,
           "name": "Investment in PKO",
+          "symbol": "PKO",
           "value": 2000,
           "date": "2021-10-10",
           "note": "Very good investment to make!"
@@ -35,6 +34,23 @@
         {
           "id": 4,
           "name": "Investment in PKO",
+          "symbol": "PKO",
+          "value": 2000,
+          "date": "2021-10-10",
+          "note": "Very good investment to make!"
+        },
+        {
+          "id": 5,
+          "name": "Investment in PKO",
+          "symbol": "PKO",
+          "value": 2000,
+          "date": "2021-10-10",
+          "note": "Very good investment to make!"
+        },
+        {
+          "id": 6,
+          "name": "Investment in PKO",
+          "symbol": "PKO",
           "value": 2000,
           "date": "2021-10-10",
           "note": "Very good investment to make!"
@@ -55,6 +71,7 @@
         {
           "id": 2,
           "name": "Investment in PKO",
+          "symbol": "PKO",
           "value": 2000,
           "date": "2021-10-10",
           "note": "Very good investment to make!"
@@ -75,6 +92,7 @@
         {
           "id": 2,
           "name": "Investment in PKO",
+          "symbol": "PKO",
           "value": 2000,
           "date": "2021-10-10",
           "note": "Very good investment to make!"
@@ -121,5 +139,73 @@
         }
       ]
     }
-  ]
+  ],
+  "PKO": [
+    {
+      "name": "PKO BP",
+      "series": [
+        {
+          "name": "2021-10-10",
+          "value": 40
+        },
+        {
+          "name": "2021-10-11",
+          "value": 42
+        },
+        {
+          "name": "2021-10-12",
+          "value": 38
+        },
+        {
+          "name": "2021-10-13",
+          "value": 43
+        },
+        {
+          "name": "2021-10-14",
+          "value": 45
+        },
+        {
+          "name": "2021-10-15",
+          "value": 52
+        },
+        {
+          "name": "2021-10-16",
+          "value": 51
+        }
+      ]
+    }
+  ],
+  "CDR": {
+    "name": "CD Project Red",
+    "series": [
+      {
+        "name": "2021-10-10",
+        "value": 150
+      },
+      {
+        "name": "2021-10-11",
+        "value": 142
+      },
+      {
+        "name": "2021-10-12",
+        "value": 138
+      },
+      {
+        "name": "2021-10-13",
+        "value": 120
+      },
+      {
+        "name": "2021-10-14",
+        "value": 150
+      },
+      {
+        "name": "2021-10-15",
+        "value": 143
+      },
+      {
+        "name": "2021-10-16",
+        "value": 145
+      }
+    ]
+  }
 }

@@ -8,13 +8,7 @@ import { PostDto } from 'src/app/dto/PostDto';
 })
 export class TabPostComponent implements OnInit {
 
-  @Input() post : PostDto = {
-    id: 0,
-    name: '',
-    value: 0,
-    date: new Date(),
-    note: ''
-  };
+  @Input() post!: PostDto;
 
   constructor() { }
 

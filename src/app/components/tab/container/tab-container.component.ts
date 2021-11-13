@@ -11,7 +11,7 @@ import { InvestmentGroupDto } from '../../../dto/InvestmentGroupDto'
 })
 export class TabContainerComponent implements OnInit {
 
-  investmentsDto : InvestmentGroupDto[] = [];
+  investmentsDto!: InvestmentGroupDto[];
 
   constructor(private investmentsService : InvestmentsService) { }
 

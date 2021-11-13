@@ -7,20 +7,17 @@
         <mat-icon>multiline_chart</mat-icon>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <ngx-charts-bar-vertical
-      [results]="saleData"
-      [xAxisLabel]="'Products'"
-      [legendTitle]="'Product Sale Chart'"
-      [yAxisLabel]="'Sale'"
-      [legend]="true"
-      [showXAxisLabel]="true"
-      [showYAxisLabel]="true"
-      [xAxis]="true"
-      [yAxis]="true"
-      [gradient]="true"
-      style="fill: #afb7c8"
-      >
-    </ngx-charts-bar-vertical>
+    <ngx-charts-line-chart
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxis]="true"
+    [yAxis]="true"
+    [timeline]="true"
+    [results]="graphData"
+    [autoScale] = "true"
+    >
+  </ngx-charts-line-chart>
   </mat-expansion-panel>
 
   <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
