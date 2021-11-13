@@ -1,0 +1,11 @@
+mat-panel-description {
+  text-align: end;
+}
+
+.mat-expansion-panel-header-description {
+  display: inline-block;
+}
+
+ngx-charts-bar-vertical {
+  max-width: inherit;
+}

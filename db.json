@@ -1,0 +1,125 @@
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" },
+  "investments": [
+    {
+      "id": 1,
+      "name": "Stocks",
+      "posts": [
+        {
+          "id": 1,
+          "name": "Investment in CDR",
+          "value": 1000,
+          "date": "2021-10-10",
+          "note": "Good investment to make!"
+        },
+        {
+          "id": 2,
+          "name": "Investment in PKO",
+          "value": 2000,
+          "date": "2021-10-10",
+          "note": "Very good investment to make!"
+        },
+        {
+          "id": 3,
+          "name": "Investment in PKO",
+          "value": 2000,
+          "date": "2021-10-10",
+          "note": "Very good investment to make!"
+        },
+        {
+          "id": 4,
+          "name": "Investment in PKO",
+          "value": 2000,
+          "date": "2021-10-10",
+          "note": "Very good investment to make!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Goods",
+      "posts": [
+        {
+          "id": 1,
+          "name": "Investment in CDR",
+          "value": 1000,
+          "date": "2021-10-10",
+          "note": "Good investment to make!"
+        },
+        {
+          "id": 2,
+          "name": "Investment in PKO",
+          "value": 2000,
+          "date": "2021-10-10",
+          "note": "Very good investment to make!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Materials",
+      "posts": [
+        {
+          "id": 1,
+          "name": "Investment in CDR",
+          "value": 1000,
+          "date": "2021-10-10",
+          "note": "Good investment to make!"
+        },
+        {
+          "id": 2,
+          "name": "Investment in PKO",
+          "value": 2000,
+          "date": "2021-10-10",
+          "note": "Very good investment to make!"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cash",
+      "posts": [
+        {
+          "id": 1,
+          "name": "Investment in CDR",
+          "value": 1000,
+          "date": "2021-10-10",
+          "note": "Good investment to make!"
+        },
+        {
+          "id": 2,
+          "name": "Investment in PKO",
+          "value": 2000,
+          "date": "2021-10-10",
+          "note": "Very good investment to make!"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Crypto",
+      "posts": [
+        {
+          "id": 1,
+          "name": "Investment in BTC",
+          "value": 1000,
+          "date": "2021-10-10",
+          "note": "Good investment to make!"
+        },
+        {
+          "id": 2,
+          "name": "Investment in Doge",
+          "value": 2000,
+          "date": "2021-10-10",
+          "note": "Very good investment to make!"
+        }
+      ]
+    }
+  ]
+}

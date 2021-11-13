@@ -1,0 +1,8 @@
+<mat-tab-group mat-align-tabs="center" color="accent" backgroundColor="primary">
+  <mat-tab *ngFor="let tab of investmentsDto" label="{{ tab.name }}">
+    <div class="post-container">
+      <app-tab-post class="post" *ngFor="let postEntry of tab.posts" [post]="postEntry">
+      </app-tab-post>
+    </div>
+  </mat-tab>
+</mat-tab-group>

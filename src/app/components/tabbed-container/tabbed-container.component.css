@@ -1,0 +1,25 @@
+.mat-tab-group {
+  margin-bottom: 48px;
+  align-items: center;
+  max-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.mat-tab-header {
+  width: 100vw;
+}
+
+.post-container {
+  background: rgba(50, 50, 50, 0.8);
+  border-right: solid 2px #7b1fa2;
+  border-left: solid 2px #7b1fa2;
+  border-bottom: solid 2px #7b1fa2;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 3vh;
+  padding-top: 1vh;
+}
+
+app-tab-post {
+  background: rgba(0, 0, 0, 1);
+}
