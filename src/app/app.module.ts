@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { NgxChartsModule }from '@swimlane/ngx-charts';
 
 
-import { MaterialModule } from './modules/material/material.module';
+import { MatTabsModule } from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
@@ -19,15 +19,15 @@ import {MatTreeModule} from '@angular/material/tree';
 import {MatExpansionModule} from '@angular/material/expansion';
 
 
-import { TabbedContainerComponent } from './components/tabbed-container/tabbed-container.component';
+import { TabContainerComponent } from './components/tab/container/tab-container.component';
 import { InvestmentCardComponent } from './components/investment-card/investment-card.component';
-import { TabPostComponent } from './components/tab-post/tab-post.component';
-import { TabPostContentComponent } from './components/tab-post-content/tab-post-content.component';
+import { TabPostComponent } from './components/tab/post/tab-post.component';
+import { TabPostContentComponent } from './components/tab/post-content/tab-post-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TabbedContainerComponent,
+    TabContainerComponent,
     InvestmentCardComponent,
     TabPostComponent,
     TabPostContentComponent
@@ -35,7 +35,7 @@ import { TabPostContentComponent } from './components/tab-post-content/tab-post-
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule,
+    MatTabsModule,
     MatToolbarModule,
     MatIconModule,
     BrowserAnimationsModule,
