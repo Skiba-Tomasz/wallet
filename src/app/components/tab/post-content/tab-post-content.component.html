@@ -1,5 +1,10 @@
 <mat-accordion class="example-headers-align">
-  <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+  <mat-expansion-panel
+    class="graph-container"
+    [expanded]="step === 1"
+    (opened)="openGraph()"
+    hideToggle
+  >
     <mat-expansion-panel-header>
       <mat-panel-title> Price history </mat-panel-title>
       <mat-panel-description>
@@ -7,17 +12,20 @@
         <mat-icon>multiline_chart</mat-icon>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <ngx-charts-line-chart
-    [legend]="true"
-    [showXAxisLabel]="true"
-    [showYAxisLabel]="true"
-    [xAxis]="true"
-    [yAxis]="true"
-    [timeline]="true"
-    [results]="graphData"
-    [autoScale] = "true"
-    >
-  </ngx-charts-line-chart>
+      <ngx-charts-line-chart
+        (window:resize) = "onResize($event)"
+        [view]="view"
+        [legend]="true"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [xAxis]="true"
+        [yAxis]="true"
+        [timeline]="false"
+        [results]="graphData"
+        [autoScale]="true"
+        [legendPosition] = "legendPosition"
+      >
+      </ngx-charts-line-chart>
   </mat-expansion-panel>
 
   <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
